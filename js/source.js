@@ -75,19 +75,6 @@
             $(window).on('click',function(){
                 $(source).find(".content,.icon-shanchu").css('display','none');
             })
-            
-            console.log('asd');
-            console.log($(source));
-
-            $(source).a = function(){
-                console.log('123');
-
-            }
-
-            function b(){
-                console.log(123);
-            }
-         
 		},
 	});
 })(jQuery);
