@@ -1,0 +1,127 @@
+.source {
+	padding: 24px;
+	min-width: 280px;
+    display: inline-block;
+    position: relative;
+
+	.demo-input .el-input {
+		width: 180px;
+	}
+
+	.el-input__inner {
+		-webkit-appearance: none;
+		background-color: #fff;
+		background-image: none;
+		border-radius: 4px;
+		border: 1px solid #dcdfe6;
+		box-sizing: border-box;
+		color: #606266;
+		display: inline-block;
+		font-size: inherit;
+		height: 40px;
+		line-height: 40px;
+		outline: none;
+		padding: 0 15px;
+		transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+		width: 100%;
+	}
+
+	input {
+		cursor: pointer;
+		font-family: inherit;
+	}
+
+	.el-input {
+		position: relative;
+		font-size: 14px;
+		display: inline-block;
+        width: 100%;
+        
+        i {
+            position: absolute;
+            right: 15px;
+            top: 30%;
+            color: #606266;
+            display: none;
+
+            &:hover {
+                color: rgb(255, 77, 77);
+                cursor: pointer;
+            }
+        }
+	}
+
+	input:focus,
+	textarea:focus {
+		border: 1px solid #409eff;
+		outline: none;
+	}
+
+	.demo-input .el-input {
+		width: 180px;
+	}
+
+	.content {
+		position: absolute;
+		width: 180%;
+		padding: 0px 0px;
+		background: rgb(255, 255, 255);
+		box-sizing: border-box;
+		top: 55px;
+		transform-origin: center top;
+		z-index: 2016;
+		max-height: 280px;
+		border: 1px solid #dcdfe6;
+        border-radius: 4px;
+        display: none;
+        box-shadow: 3px 2px 6px 2px #eee;
+        
+        &:hover {
+            border: 1px solid #409eff;
+        }
+
+		ul {
+			li {
+				padding: 10px 15px;
+				color: #606266;
+				cursor: pointer;
+				transition: all 0.2s;
+                border-bottom: 1px solid #ebebeb;
+                
+				&:last-child {
+					border-bottom: 0;
+				}
+				&:hover {
+					// opacity: 0.8;
+                    background: #f5f7fa;
+                    color: #409eff;
+				}
+			}
+		}
+	}
+}
+
+
+@font-face {font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_1909234_bddg47dz63p.eot?t=1594886073603'); /* IE9 */
+    src: url('//at.alicdn.com/t/font_1909234_bddg47dz63p.eot?t=1594886073603#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPcAAsAAAAACLQAAAONAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDQAqENINVATYCJAMYCw4ABCAFhG0HVBt/BxEVnOHIvjgwxpHLl1ChPid9x/otudEeSec5AmzZZsvttwquNoktTVaFRCiCIh6EAoVHKZTAlW4EBqyjZnWwFeWm0I0ERz4DAHYT/OKcBzYqQo3k7MmjHyRdRtnT9HBxaZo6ntBh2tpZXGovlAlgogEKh2r7Xkj+QV7Ufxi7vMirCWiapoU4cvEKAptMXxQQrtJT48GW0MoVpKCuKAU7M8IDGPXYTm4D7r3fD38wCGwQVQn6yvMU5yTYPRg9LFJ1/+sU5WDAG84Mto+ETZAJN4XWa1BBdBOlKYdpB4ASroviUPV9D3MPi///Q9yCcEPypvEvjyBKsopQoOe3wTGKVXwaWSiBzz6UyOccSuJzASXzudikAmXA+gYe4RURFyNRFgxXW0icS8cIvk3l8V3QyX3w2WPo6UN40nyHRshI/VKncPBwp2jqaOdCXWVn8MmJidQFHR8jHSGnp0h96NlZd2irnLCkoY7F+toVCcnDdfMdIil9iBPzQhOiiQkjdrno6Jxw8vC4UGVFaFokImwIikUwNlUcWY/lqMMjQ7FwpTgpf50clbNPC4kwu8yekPA+E5GFmf23i4hxdXc0M5yfHxczEB2fn+Nn53dyHxNTkIBcsosMUPCTr6yU91MIWDdZLitkxQcHKKwXlETYXtBycvSFoZaTs4VRKRNYUTEmriDe7qaMiyuKNypQcXtcNobeB0Wpo2ICrOWsL/Rjm0q6QFvCiAIxJt4O/TumXEw+b/SF9ZHOEcuXjIFQaO8fw+Mv7VuiAPyP5o3KBYhP5CRAmiP1AdI8afAD/I3ZS1mRWF6rDzZOGvBiorblVf3XFekWeIsyjXmvm9ewKysCXVey1NmqEVBsx/wi77blNTuHboeSTzTOJ6ibiCCqmYKkbhGbiZtQadmCom4Xmja47m8ZKQAlZHawrhlA0LcGUdczJH072Ey8gcqkdyj6gYKmC0LwxJblQOHDUbEwrKH8A1cykmmwg194Qxf6QuMCj/JC9RyANErSiSuOqEOs8R+XmRGQygAXcD3se4FJpcXKosZsyuOYij4pqmSYHeCoWBjWUP6BKxnJ6W+HzM/f0IW+0IqOMvML1fPokEZJA+xVOjbquJTn+I/LzAhIZYALMGNvRAWm4mktVhY1HcJTHqNe1FQaTS8f7vIQNKHftRAmlHG8WJICOwlb3xRj1YQNuSyi4k18ooQ3r39c9MVsBgAAAA==') format('woff2'),
+    url('//at.alicdn.com/t/font_1909234_bddg47dz63p.woff?t=1594886073603') format('woff'),
+    url('//at.alicdn.com/t/font_1909234_bddg47dz63p.ttf?t=1594886073603') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('//at.alicdn.com/t/font_1909234_bddg47dz63p.svg?t=1594886073603#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-shanchu:before {
+    content: "\e690";
+  }
+  
+
+  
